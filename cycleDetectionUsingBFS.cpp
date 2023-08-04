@@ -21,7 +21,7 @@ class Solution {
     }
     bool isCycle(int V, vector<int> adj[]) {
         // Code here
-        bool visited[V]={false};;
+        bool visited[V]={false};
         for(int i=0;i<V;i++){
             if(!visited[i]){
                 if(detectCycle(adj,visited,V,i)){ return true; }
