@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <bits/stdc++.h>
+
+using namespace std;
+string frequencyOfString(char *input1){
+    vector<int> arr(26,0);
+    while(*input1!='\0'){
+        arr[*input1-'a']++;
+        input1++;
+    }
+    string str="";
+    for(int i=0;i<26;i++){
+        if(arr[i]==0){
+            continue;
+        }else{
+            int j=i;
+            str=str+char(i+'a')+to_string(arr[j]);
+        }
+    }
+    return str;
+}
+    int main() {
+    char input[] = "";
+    string result = frequencyOfString(input);
+    cout << "Character frequency: " << result << endl;
+    return 0;
+}
