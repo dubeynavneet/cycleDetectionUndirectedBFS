@@ -1,3 +1,3 @@
-# copetative coding answers
+# competative coding answers
 prefix_suffix
 zig_zig decoding
